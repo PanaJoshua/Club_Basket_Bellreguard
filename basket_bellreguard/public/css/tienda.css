@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background-color: #e0e0e0;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #DC2626;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img:first-child {
+    width: 80px;
+    margin-left: 1rem;
+}
+
+header img:last-child{
+    width: 80px;
+    margin-right: 1rem;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    display: block;
+    margin-right: 0.5rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+header ul li a:hover {
+    color: black;
+    transition: color 0.3s; 
+}
+
+main {
+    padding-top: 2rem;
+}
+
+.tienda_introduccion {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tienda_introduccion h1 {
+    font-size: 3.5rem;
+}
+
+.tienda_introduccion p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.formulario_tienda {
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 4rem;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    background-color: #F1EEF5;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    width: 40%;
+}
+
+.buscador input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    background-color: #F1EEF5;
+}
+
+.buscador button {
+    border: none;
+    background: #F1EEF5;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.tienda_productos {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.producto_card {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.producto_imagen {
+    background-image: url("../img/tienda/Merchandising.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    height: 22rem;
+}
+
+.producto_info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.producto_info h2 {
+    font-size: 2rem;
+}
+
+.producto_info p {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.tienda_mas {
+    padding-top: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.tienda_mas button {
+    background-color: gray;
+    width: 18%;
+    height: 4rem;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.tienda_mas button:hover {
+    background-color: #DC2626;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 3rem;
+    padding: 2rem 0 0 0;
+}
+
+.footer-contenido {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-columna {
+    width: 50%;
+    padding: 0 1rem;
+}
+
+.footer-columna h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    border-bottom: 2px solid red;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links li a {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    display: block;
+    padding: 0.3rem 0;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.1);
+}
+
+.redes-sociales img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+}
+
+.footer-derechos {
+    background-color: #111;
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.footer-derechos p {
+    font-size: 1rem;
+    color: #aaa;
+    margin: 0;
+}
