@@ -38,7 +38,7 @@
     </section>
 
     <section class="noticias_filtros">
-        <button>Todas</button>
+        <button class="activo">Todas</button>
         <button>Partidos</button>
         <button>Eventos</button>
         <button>Club</button>
@@ -47,65 +47,71 @@
 
     <section class="noticias_listado">
 
+        <a href="#" class="noticia_link">
         <article class="noticia_card">
             <div class="noticia_imagen"></div>
             <div class="noticia_contenido">
                 <h2>Lesión de un jugador del cadete</h2>
                 <time datetime="2025-11-04">04/11/2025</time>
                 <p>El jugador A. Torres sufre una lesión grave durante el último encuentro.</p>
-                <a href="#" class="btn-noticia">Leer más</a>
             </div>
         </article>
+        </a>
 
+        <a href="#" class="noticia_link">
         <article class="noticia_card">
             <div class="noticia_imagen"></div>
             <div class="noticia_contenido">
                 <h2>El primer equipo gana el partido</h2>
                 <time datetime="2025-11-01">01/11/2025</time>
                 <p>El equipo senior vence a Gandía en la final con una gran actuación.</p>
-                <a href="#" class="btn-noticia">Leer más</a>
             </div>
         </article>
+        </a>
 
+        <a href="#" class="noticia_link">
         <article class="noticia_card">
             <div class="noticia_imagen"></div>
             <div class="noticia_contenido">
                 <h2>Próximo partido contra el rival X</h2>
                 <time datetime="2025-11-10">10/11/2025</time>
                 <p>El club se prepara para un encuentro clave esta jornada.</p>
-                <a href="#" class="btn-noticia">Leer más</a>
             </div>
         </article>
+        </a>
 
+        <a href="#" class="noticia_link">
         <article class="noticia_card">
             <div class="noticia_imagen"></div>
             <div class="noticia_contenido">
                 <h2>Próximo partido contra el rival X</h2>
                 <time datetime="2025-11-10">10/11/2025</time>
                 <p>El club se prepara para un encuentro clave esta jornada.</p>
-                <a href="#" class="btn-noticia">Leer más</a>
             </div>
         </article>
+        </a>
 
+        <a href="#" class="noticia_link">
         <article class="noticia_card">
             <div class="noticia_imagen"></div>
             <div class="noticia_contenido">
                 <h2>Próximo partido contra el rival X</h2>
                 <time datetime="2025-11-10">10/11/2025</time>
                 <p>El club se prepara para un encuentro clave esta jornada.</p>
-                <a href="#" class="btn-noticia">Leer más</a>
             </div>
         </article>
+        </a>
 
+        <a href="#" class="noticia_link">
         <article class="noticia_card">
             <div class="noticia_imagen"></div>
             <div class="noticia_contenido">
                 <h2>Próximo partido contra el rival X</h2>
                 <time datetime="2025-11-10">10/11/2025</time>
                 <p>El club se prepara para un encuentro clave esta jornada.</p>
-                <a href="#" class="btn-noticia">Leer más</a>
             </div>
         </article>
+        </a>
 
     </section>
 
@@ -122,6 +128,7 @@
             <ul class="footer-links">
                 <li><a href="#">Hazte patrocinador</a></li>
                 <li><a href="#">Contacta con nosotros</a></li>
+                <li><a href="https://basketcv.com/club/basquet-bellreguard">Más información del club</a></li>
             </ul>
         </div>
 
@@ -129,7 +136,7 @@
             <h3>REDES SOCIALES</h3>
             <div class="redes-sociales">
                 <a href="#"><img src="{{ asset('img/noticias/facebook.png') }}" alt="Facebook"></a>
-                <a href="#"><img src="{{ asset('img/noticias/instagram.png') }}" alt="Instagram"></a>
+                <a href="https://www.instagram.com/basquetbellreguard/"><img src="{{ asset('img/noticias/instagram.png') }}" alt="Instagram"></a>
             </div>
         </div>
     </div>

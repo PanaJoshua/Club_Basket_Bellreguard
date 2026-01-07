@@ -109,6 +109,30 @@ main {
     transition: all 0.3s ease;
 }
 
+.calendario_leyenda {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.leyenda {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.leyenda.partido {
+    background-color: #ffe5e5;
+    border-left: 5px solid #DC2626;
+}
+
+.leyenda.entrenamiento {
+    background-color: #e5f0ff;
+    border-left: 5px solid #2563eb;
+}
+
+
 .calendario {
     margin-top: 2rem;
     border: 1px solid #999;
@@ -121,6 +145,12 @@ main {
     text-align: center;
     font-weight: bold;
     margin-bottom: 0.5rem;
+}
+
+.calendario_dias div {
+    background-color: #f2f2f2;
+    padding: 0.8rem 0;
+    border: 1px solid #ccc;
 }
 
 .calendario_grid {
@@ -145,8 +175,14 @@ main {
     display: block;
 }
 
+.dia.hoy {
+    border: 2px solid #DC2626;
+    background-color: #fff;
+}
+
 .dia.partido {
-    background-color: #d9d9d9;
+    background-color: #ffe5e5;
+    border-left: 5px solid #DC2626;
 }
 
 .dia.partido .texto {
@@ -155,7 +191,8 @@ main {
 }
 
 .dia.entrenamiento {
-    background-color: #d9d9d9;
+    background-color: #e5f0ff;
+    border-left: 5px solid #2563eb;
 }
 
 .dia.entrenamiento .texto {
@@ -163,6 +200,15 @@ main {
     margin-top: 0.5rem;
 }
 
+.dia.evento {
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dia.evento:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
 
 footer {
     background-color: black;
@@ -249,4 +295,107 @@ footer {
     font-size: 1rem;
     color: #aaa;
     margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li a {
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+
+    header img:first-child,
+    header img:last-child {
+        width: 60px;
+        margin: 0.5rem 0;
+    }
+
+    .calendario_introduccion h1 {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .calendario_introduccion p {
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .formulario_calendario {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .filtro select {
+        width: 100%;
+    }
+
+    .btn-buscar {
+        width: 100%;
+    }
+
+    .calendario_leyenda {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .leyenda {
+        width: 90%;
+        text-align: center;
+    }
+
+    .calendario {
+        padding: 1rem;
+        overflow-x: auto;
+    }
+
+    .calendario_dias div {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+    }
+
+    .calendario_grid {
+        grid-auto-rows: 80px;
+    }
+
+    .dia {
+        font-size: 1.2rem;
+        padding: 0.3rem;
+    }
+
+    .dia .texto {
+        font-size: 1.1rem;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-columna {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+    }
 }

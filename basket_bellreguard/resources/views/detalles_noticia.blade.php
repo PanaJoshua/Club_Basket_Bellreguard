@@ -65,29 +65,29 @@
 
             <div class="noticias_grid">
 
-                <article class="noticia_card">
+                <a href="#" class="noticia_card">
                     <div class="noticia_imagen"></div>
                     <div class="noticia_contenido">
                         <h3>Título de la noticia</h3>
                         <p>Breve descripción de la noticia relacionada.</p>
                     </div>
-                </article>
+                </a>
 
-                <article class="noticia_card">
+                <a href="#" class="noticia_card">
                     <div class="noticia_imagen"></div>
                     <div class="noticia_contenido">
                         <h3>Título de la noticia</h3>
                         <p>Breve descripción de la noticia relacionada.</p>
                     </div>
-                </article>
+                </a>
 
-                <article class="noticia_card">
+                <a href="#" class="noticia_card">
                     <div class="noticia_imagen"></div>
                     <div class="noticia_contenido">
                         <h3>Título de la noticia</h3>
                         <p>Breve descripción de la noticia relacionada.</p>
                     </div>
-                </article>
+                </a>
 
             </div>
         </section>
@@ -101,6 +101,7 @@
             <ul class="footer-links">
                 <li><a href="#">Hazte patrocinador</a></li>
                 <li><a href="#">Contacta con nosotros</a></li>
+                <li><a href="https://basketcv.com/club/basquet-bellreguard">Más información del club</a></li>
             </ul>
         </div>
 
@@ -108,7 +109,7 @@
             <h3>REDES SOCIALES</h3>
             <div class="redes-sociales">
                 <a href="#"><img src="{{ asset('img/detalles_noticia/facebook.png') }}" alt="Facebook"></a>
-                <a href="#"><img src="{{ asset('img/detalles_noticia/instagram.png') }}" alt="Instagram"></a>
+                <a href="https://www.instagram.com/basquetbellreguard/"><img src="{{ asset('img/detalles_noticia/instagram.png') }}" alt="Instagram"></a>
             </div>
         </div>
     </div>

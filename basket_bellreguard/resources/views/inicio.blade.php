@@ -30,51 +30,68 @@
 
         <div id="tabular">
             <div class="noticias">
-                <p>Noticias destacadas</p>
+                <h2>Noticias destacadas</h2>
                 
-                <div class="contenido-noticia">
-                    <img src="{{ asset('img/inicio/pierna_rota.jpg') }}" alt="Pierna rota">
-                    <div class="texto-noticia">
-                        <p>Lesión grave en el último partido</p>
-                        <p>El jugador Juan Pérez sufrió una fractura durante el partido contra Valencia. Estará de baja 3 meses.</p>
+                <a href="#" class="noticia-link">
+                    <div class="contenido-noticia">
+                        <img src="{{ asset('img/inicio/pierna_rota.jpg') }}" alt="Pierna rota de un jugador">
+                        <div class="texto-noticia">
+                            <p>Lesión grave en el último partido</p>
+                            <p>
+                                El jugador Juan Pérez sufrió una fractura durante el partido
+                                contra Valencia. Estará de baja 3 meses.
+                            </p>
+                        </div>
                     </div>
-                </div>
+                </a>
                 
-                <div class="contenido-noticia">
-                    <img src="{{ asset('img/inicio/equipo_celebrando.jpg') }}" alt="Equipo celebrando victoria">
-                    <div class="texto-noticia">
-                        <p>Victoria histórica en la liga</p>
-                        <p>Nuestro equipo senior consiguió una victoria por 95-78 contra el líder de la liga. ¡Gran actuación!</p>
+                <a href="#" class="noticia-link">
+                    <div class="contenido-noticia">
+                        <img src="{{ asset('img/inicio/equipo_celebrando.jpg') }}" alt="Equipo celebrando victoria">
+                        <div class="texto-noticia">
+                            <p>Victoria histórica en la liga</p>
+                            <p>Nuestro equipo senior consiguió una victoria por 95-78 contra el líder de la liga. ¡Gran actuación!</p>
+                        </div>
                     </div>
-                </div>
+                </a>
                 
             </div>
 
             <div class="equipos">
                 <p>Equipos destacados</p>
-                <img src="{{ asset('img/inicio/senior.png') }}" alt="Equipo senior">
-                <img src="{{ asset('img/inicio/junior.png') }}" alt="Equipo junior">
-                <img src="{{ asset('img/inicio/infantil.png') }}" alt="Equipo infantil">
+
+                <a href="#" class="equipo-item">
+                    <img src="{{ asset('img/inicio/senior.png') }}" alt="Equipo senior">
+                </a>
+
+                <a href="#" class="equipo-item">
+                    <img src="{{ asset('img/inicio/junior.png') }}" alt="Equipo junior">
+                </a>
+
+                <a href="#" class="equipo-item">
+                    <img src="{{ asset('img/inicio/infantil.png') }}" alt="Equipo infantil">
+                </a>
             </div>
+
         </div>
 
         <div id="patrocinadores">
             <p>Patrocinadores</p>
-            <div class="item-patrocinador">
-                <img src="{{ asset('img/inicio/nike.png') }}" alt="Logo Nike" /><br/>
-                <p> <strong>NIKE</strong></p>
+            <a href="https://www.nike.com" target="_blank" class="item-patrocinador">
+                <img src="{{ asset('img/inicio/nike.png') }}" alt="Logo Nike" />
+                <p><strong>NIKE</strong></p>
                 <p>Patrocinador Oficial</p>
-            </div>
-            <div class="item-patrocinador">
-                <img src="{{ asset('img/inicio/motorola.png') }}" alt="Logo Motorola" /><br/>
-                <p> <strong>MOTOROLA</strong></p>
+            </a>
+            <a href="https://www.motorola.com" target="_blank" class="item-patrocinador">
+                <img src="{{ asset('img/inicio/motorola.png') }}" alt="Logo Motorola" />
+                <p><strong>MOTOROLA</strong></p>
                 <p>Patrocinador Tecnológico</p>
-            </div>
-            <div class="item-patrocinador">
-                <img src="{{ asset('img/inicio/valencia basket.png') }}" alt="Logo Valencia Basket" /><br/>
-                <p> <strong>VALENCIA BASKET</strong></p>
+            </a>
+            <a href="https://valenciabasket.com" target="_blank" class="item-patrocinador">
+                <img src="{{ asset('img/inicio/valencia basket.png') }}" alt="Logo Valencia Basket" />
+                <p><strong>VALENCIA BASKET</strong></p>
                 <p>Club Asociado</p>
-            </div>
+            </a>
         </div>
     </main>
 
@@ -85,6 +102,7 @@
                 <ul class="footer-links">
                     <li><a href="#">Hazte patrocinador</a></li>
                     <li><a href="#">Contacta con nosotros</a></li>
+                    <li><a href="https://basketcv.com/club/basquet-bellreguard">Más información del club</a></li>
                 </ul>
             </div>
             
@@ -92,7 +110,7 @@
                 <h3>REDES SOCIALES</h3>
                 <div class="redes-sociales">
                     <a href="#"><img src="{{ asset('img/inicio/facebook.png') }}" alt="Facebook"></a>
-                    <a href="#"><img src="{{ asset('img/inicio/instagram.png') }}" alt="Instagram"></a>
+                    <a href="https://www.instagram.com/basquetbellreguard/"><img src="{{ asset('img/inicio/instagram.png') }}" alt="Instagram"></a>
                 </div>
             </div>
         </div>

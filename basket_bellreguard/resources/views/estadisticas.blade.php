@@ -152,6 +152,7 @@
             <ul class="footer-links">
                 <li><a href="#">Hazte patrocinador</a></li>
                 <li><a href="#">Contacta con nosotros</a></li>
+                <li><a href="https://basketcv.com/club/basquet-bellreguard">Más información del club</a></li>
             </ul>
         </div>
 
@@ -159,7 +160,7 @@
             <h3>REDES SOCIALES</h3>
             <div class="redes-sociales">
                 <a href="#"><img src="{{ asset('img/estadisticas/facebook.png') }}" alt="Facebook"></a>
-                <a href="#"><img src="{{ asset('img/estadisticas/instagram.png') }}" alt="Instagram"></a>
+                <a href="https://www.instagram.com/basquetbellreguard/"><img src="{{ asset('img/estadisticas/instagram.png') }}" alt="Instagram"></a>
             </div>
         </div>
     </div>

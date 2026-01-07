@@ -133,6 +133,12 @@ main {
     color: white;
 }
 
+.noticias_filtros button.activo {
+    background-color: #DC2626;
+    color: white;
+    font-weight: bold;
+}
+
 .noticias_listado {
     margin-top: 2rem;
     display: grid;
@@ -140,9 +146,19 @@ main {
     gap: 30px;
 }
 
+.noticia_link {
+    color: inherit;
+}
+
 .noticia_card {
     background-color: white;
     border: 1px solid black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.noticia_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
 .noticia_imagen {
@@ -295,4 +311,98 @@ footer {
     font-size: 1rem;
     color: #aaa;
     margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li a {
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+
+    header img:first-child,
+    header img:last-child {
+        width: 60px;
+        margin: 0.5rem 0;
+    }
+
+    .noticias_introduccion h1 {
+        font-size: 2.6rem;
+        text-align: center;
+    }
+
+    .noticias_introduccion p {
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .buscador {
+        width: 90%;
+    }
+
+    .noticias_filtros {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .noticias_filtros button {
+        width: 80%;
+    }
+
+    .noticias_listado {
+        grid-template-columns: 1fr;
+    }
+
+    .noticia_imagen {
+        height: 22rem;
+    }
+
+    .noticia_contenido h2 {
+        font-size: 1.8rem;
+    }
+
+    .noticia_contenido p {
+        font-size: 1.1rem;
+    }
+
+    .noticia_contenido a {
+        width: 80%;
+        margin-top: 1rem;
+    }
+
+    .noticias_mas button {
+        width: 80%;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-columna {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+    }
 }

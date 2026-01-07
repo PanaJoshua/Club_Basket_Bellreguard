@@ -30,7 +30,7 @@
         </section>
 
         <section class="equipos_filtros">
-            <button>Todos</button>
+            <button class="activo">Todos</button>
             <button>Infantil</button>
             <button>Cadete</button>
             <button>Junior</button>
@@ -104,6 +104,7 @@
                 <ul class="footer-links">
                     <li><a href="#">Hazte patrocinador</a></li>
                     <li><a href="#">Contacta con nosotros</a></li>
+                    <li><a href="https://basketcv.com/club/basquet-bellreguard">Más información del club</a></li>
                 </ul>
             </div>
             
@@ -111,7 +112,7 @@
                 <h3>REDES SOCIALES</h3>
                 <div class="redes-sociales">
                     <a href="#"><img src="{{ asset('img/equipos/facebook.png') }}" alt="Facebook"></a>
-                    <a href="#"><img src="{{ asset('img/equipos/instagram.png') }}" alt="Instagram"></a>
+                    <a href="https://www.instagram.com/basquetbellreguard/"><img src="{{ asset('img/equipos/instagram.png') }}" alt="Instagram"></a>
                 </div>
             </div>
         </div>

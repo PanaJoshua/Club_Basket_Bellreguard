@@ -45,53 +45,71 @@
 
     <section class="tienda_productos">
 
+        <a href="producto.html" class="producto_link">
         <article class="producto_card">
             <div class="producto_imagen"></div>
             <div class="producto_info">
                 <h2>Camiseta oficial 25/26</h2>
                 <p class="precio">25,00€</p>
+                <button class="btn-comprar">Ver producto</button>
             </div>
         </article>
+        </a>
 
+        <a href="producto.html" class="producto_link">
         <article class="producto_card">
             <div class="producto_imagen"></div>
             <div class="producto_info">
                 <h2>Balón de entrenar</h2>
                 <p class="precio">20,00€</p>
+                <button class="btn-comprar">Ver producto</button>
             </div>
         </article>
+        </a>
 
+        <a href="producto.html" class="producto_link">
         <article class="producto_card">
             <div class="producto_imagen"></div>
             <div class="producto_info">
                 <h2>Gorra del club firmada</h2>
                 <p class="precio">22,00€</p>
+                <button class="btn-comprar">Ver producto</button>
             </div>
         </article>
+        </a>
 
+        <a href="producto.html" class="producto_link">
         <article class="producto_card">
             <div class="producto_imagen"></div>
             <div class="producto_info">
                 <h2>Nombre</h2>
                 <p class="precio">Precio</p>
+                <button class="btn-comprar">Ver producto</button>
             </div>
         </article>
+        </a>
 
+        <a href="producto.html" class="producto_link">
         <article class="producto_card">
             <div class="producto_imagen"></div>
             <div class="producto_info">
                 <h2>Nombre</h2>
                 <p class="precio">Precio</p>
+                <button class="btn-comprar">Ver producto</button>
             </div>
         </article>
+        </a>
 
+        <a href="producto.html" class="producto_link">
         <article class="producto_card">
             <div class="producto_imagen"></div>
             <div class="producto_info">
                 <h2>Nombre</h2>
                 <p class="precio">Precio</p>
+                <button class="btn-comprar">Ver producto</button>
             </div>
         </article>
+        </a>
 
     </section>
 
@@ -108,6 +126,7 @@
             <ul class="footer-links">
                 <li><a href="#">Hazte patrocinador</a></li>
                 <li><a href="#">Contacta con nosotros</a></li>
+                <li><a href="https://basketcv.com/club/basquet-bellreguard">Más información del club</a></li>
             </ul>
         </div>
 
@@ -115,7 +134,7 @@
             <h3>REDES SOCIALES</h3>
             <div class="redes-sociales">
                 <a href="#"><img src="{{ asset('img/tienda/facebook.png') }}" alt="Facebook"></a>
-                <a href="#"><img src="{{ asset('img/tienda/instagram.png') }}" alt="Instagram"></a>
+                <a href="https://www.instagram.com/basquetbellreguard/"><img src="{{ asset('img/tienda/instagram.png') }}" alt="Instagram"></a>
             </div>
         </div>
     </div>

@@ -86,10 +86,15 @@ main {
 
 .noticia_meta {
     padding-top: 1rem;
+    color: #555;
 }
 
 .noticia_meta time {
-    font-size: 1.3rem;
+    background-color: #DC2626;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
     padding-right: 1rem;
 }
 
@@ -103,6 +108,8 @@ main {
 
 .noticia_texto p {
     font-size: 1.6rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
 }
 
 .noticia_detalle a {
@@ -136,6 +143,13 @@ main {
 .noticia_card {
     background-color: white;
     border: 1px solid black;
+    color: black;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.noticia_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .noticia_imagen {
@@ -248,4 +262,93 @@ footer {
     font-size: 1rem;
     color: #aaa;
     margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li a {
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+
+    header img:first-child,
+    header img:last-child {
+        width: 60px;
+        margin: 0.5rem 0;
+    }
+
+    .noticia_banner {
+        width: 100%;
+        height: 22rem;
+        padding: 0;
+    }
+
+    .noticia_detalle {
+        padding: 1.5rem;
+    }
+
+    .noticia_detalle h1 {
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
+
+    .noticia_meta {
+        font-size: 1.2rem;
+    }
+
+    .noticia_texto p {
+        font-size: 1.4rem;
+    }
+
+    .noticia_detalle a {
+        width: 100%;
+        height: 4.5rem;
+        font-size: 1.4rem;
+    }
+
+    .noticias_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .noticia_imagen {
+        height: 22rem;
+    }
+
+    .noticia_contenido h3 {
+        font-size: 1.6rem;
+    }
+
+    .noticia_contenido p {
+        font-size: 1.1rem;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-columna {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+    }
 }

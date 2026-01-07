@@ -69,6 +69,11 @@
         </form>
     </section>
 
+    <div class="calendario_leyenda">
+    <span class="leyenda partido">Partido</span>
+    <span class="leyenda entrenamiento">Entrenamiento</span>
+    </div>
+
     <section class="calendario">
 
         <div class="calendario_dias">
@@ -88,7 +93,7 @@
             <div class="dia">3</div>
             <div class="dia">4</div>
             <div class="dia">5</div>
-            <div class="dia">6</div>
+            <div class="dia hoy">6</div>
             <div class="dia">7</div>
 
             <div class="dia">8</div>
@@ -144,6 +149,7 @@
                 <ul class="footer-links">
                     <li><a href="#">Hazte patrocinador</a></li>
                     <li><a href="#">Contacta con nosotros</a></li>
+                    <li><a href="https://basketcv.com/club/basquet-bellreguard">Más información del club</a></li>
                 </ul>
         </div>
             
@@ -151,7 +157,7 @@
             <h3>REDES SOCIALES</h3>
                 <div class="redes-sociales">
                     <a href="#"><img src="{{ asset('img/calendario/facebook.png') }}" alt="Facebook"></a>
-                    <a href="#"><img src="{{ asset('img/calendario/instagram.png') }}" alt="Instagram"></a>
+                    <a href="https://www.instagram.com/basquetbellreguard/"><img src="{{ asset('img/calendario/instagram.png') }}" alt="Instagram"></a>
                 </div>
         </div>
     </div>
