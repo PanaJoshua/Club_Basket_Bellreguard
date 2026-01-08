@@ -10,16 +10,16 @@
 </head>
 <body>
     <header>
-        <a href="#"><img src="{{ asset('img/inicio/logotipo.png') }}" alt="Logotipo del club"></a>
+        <a href="{{ route('inicio') }}"><img src="{{ asset('img/inicio/logotipo.png') }}" alt="Logotipo del club"></a>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Equipos</a></li>
-            <li><a href="#">Estadisticas</a></li>
-            <li><a href="#">Calendario</a></li>
-            <li><a href="#">Tienda</a></li>
+            <li><a href="{{ route('inicio') }}">Inicio</a></li>
+            <li><a href="{{ route('noticias') }}">Noticias</a></li>
+            <li><a href="{{ route('equipos') }}">Equipos</a></li>
+            <li><a href="{{ route('estadisticas') }}">Estadísticas</a></li>
+            <li><a href="{{ route('calendario') }}">Calendario</a></li>
+            <li><a href="{{ route('tienda') }}">Tienda</a></li>
         </ul>
-        <a href="#"><img src="{{ asset('img/inicio/icono_de_perfil.png') }}" alt="Icono de perfil"></a>
+        <a href="{{ route('login') }}"><img src="{{ asset('img/inicio/icono_de_perfil.png') }}" alt="Icono de perfil"></a>
     </header>
 
     <main>
