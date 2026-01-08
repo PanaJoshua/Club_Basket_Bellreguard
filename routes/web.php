@@ -3,41 +3,37 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/inicio', function () {
     return view('inicio');
-});
-
-Route::get('/equipos', function () {
-    return view('equipos');
-});
+})->name('inicio');
 
 Route::get('/noticias', function () {
     return view('noticias');
-});
+})->name('noticias');
 
-Route::get('/detalles_noticia', function () {
+Route::get('/noticias/{id}', function ($id) {
     return view('detalles_noticia');
-});
+})->name('noticia.detalle');
+
+Route::get('/equipos', function () {
+    return view('equipos');
+})->name('equipos');
 
 Route::get('/estadisticas', function () {
     return view('estadisticas');
-});
+})->name('estadisticas');
 
 Route::get('/calendario', function () {
     return view('calendario');
-});
-
-Route::get('/patrocinadores_colaboradores', function () {
-    return view('patrocinadores_colaboradores');
-});
+})->name('calendario');
 
 Route::get('/tienda', function () {
     return view('tienda');
-});
+})->name('tienda');
 
 Route::get('/login', function () {
     return view('login');
-});
+})->name('login');
+
+Route::get('/patrocinadores', function () {
+    return view('patrocinadores_colaboradores');
+})->name('patrocinadores');
