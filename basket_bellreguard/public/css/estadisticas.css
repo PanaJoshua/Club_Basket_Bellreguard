@@ -1,0 +1,384 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background-color: #e0e0e0;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #DC2626;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img:first-child {
+    width: 80px;
+    margin-left: 1rem;
+}
+
+header img:last-child{
+    width: 80px;
+    margin-right: 1rem;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    display: block;
+    margin-right: 0.5rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+header ul li a:hover {
+    color: black;
+    transition: color 0.3s; 
+}
+
+main {
+    padding-top: 2rem;
+}
+
+.estadisticas_introduccion {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.estadisticas_introduccion h1 {
+    font-size: 3.5rem;
+}
+
+.estadisticas_introduccion p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.estadisticas_filtros {
+    padding-top: 1rem;
+}
+
+.formulario {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtro select {
+    width: 260px;
+    height: 4rem;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color: black;
+    font-size: 1.4rem;
+    text-align: center;
+    border: none;
+}
+
+.btn-buscar {
+    width: 160px;
+    height: 4rem;
+    background-color: #DC2626;
+    color: white;
+    font-size: 1.4rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-buscar:hover {
+    background-color: darkred;
+}
+
+.estadisticas_resumen {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.resumen_card {
+    background-color: white;
+    border: 1px solid black;
+    height: 10rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resumen_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.resumen_card h2 {
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.resumen_card p:nth-child(2) {
+    padding-top: 1rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #DC2626;
+}
+
+.resumen_card p:nth-child(3) {
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.estadisticas_tabla {
+    padding-top: 1rem;
+}
+
+.estadisticas_tabla table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background-color: white;
+}
+
+.estadisticas_tabla thead {
+    background-color: #d9d9d9;
+}
+
+.estadisticas_tabla th,
+.estadisticas_tabla td {
+    padding: 1rem;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.estadisticas_tabla th {
+    font-weight: bold;
+}
+
+.estadisticas_tabla td:first-child,
+.estadisticas_tabla th:first-child {
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.estadisticas_tabla tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.estadisticas_tabla tbody tr:hover {
+    background-color: #eee;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 3rem;
+    padding: 2rem 0 0 0;
+}
+
+.footer-contenido {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-columna {
+    width: 50%;
+    padding: 0 1rem;
+}
+
+.footer-columna h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    border-bottom: 2px solid red;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links li a {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    display: block;
+    padding: 0.3rem 0;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.1);
+}
+
+.redes-sociales img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+}
+
+.footer-derechos {
+    background-color: #111;
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.footer-derechos p {
+    font-size: 1rem;
+    color: #aaa;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li a {
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+
+    header img:first-child,
+    header img:last-child {
+        width: 60px;
+        margin: 0.5rem 0;
+    }
+
+    .estadisticas_introduccion h1 {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .estadisticas_introduccion p {
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .formulario {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .filtro select {
+        width: 100%;
+    }
+
+    .btn-buscar {
+        width: 100%;
+    }
+
+    .estadisticas_resumen {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 1rem;
+    }
+
+    .resumen_card {
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .resumen_card h2 {
+        font-size: 1.8rem;
+    }
+
+    .resumen_card p:nth-child(2) {
+        font-size: 2.4rem;
+    }
+
+    .estadisticas_tabla {
+        overflow-x: auto;
+    }
+
+    .estadisticas_tabla table {
+        min-width: 700px;
+    }
+
+    .estadisticas_tabla th,
+    .estadisticas_tabla td {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-columna {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+    }
+}

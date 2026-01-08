@@ -1,0 +1,494 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background-color: #e0e0e0;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #DC2626;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img:first-child {
+    width: 80px;
+    margin-left: 1rem;
+}
+
+header img:last-child{
+    width: 80px;
+    margin-right: 1rem;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    display: block;
+    margin-right: 0.5rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+header ul li a:hover {
+    color: black;
+    transition: color 0.3s; 
+} 
+
+main {
+    margin-top: 1rem;
+}
+
+.inicio_banner {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 1rem;
+    width: 80%;
+    height: 40rem;
+    margin: 0 auto;
+    background-image: url('../img/inicio/banner_principal.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: banner 10s infinite;
+    animation-direction: alternate;
+}
+
+.inicio_banner h1 {
+    color: white;
+    padding-bottom: 2rem;
+    font-size: 5rem;
+    width: 40%;
+    padding-left: 80px;
+}
+
+.inicio_banner a {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-left: 6.5rem;
+    transition: background 0.3s;
+    width: 40%;
+    text-align: center;
+}
+
+.inicio_banner a:hover {
+    background-color: #b30000;
+}
+
+#tabular {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 3rem;
+}
+
+.noticias {
+    width: 50%;
+}
+
+.noticias h2 {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contenido-noticia {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contenido-noticia:last-child {
+    margin-bottom: 0;
+}
+
+.noticias img {
+    width: 200px;
+}
+
+.noticia-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.noticia-link .contenido-noticia {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.noticia-link:hover .contenido-noticia {
+    background-color: #f5f5f5;
+    transform: translateY(-3px);
+}
+
+.texto-noticia {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+.texto-noticia p:first-child {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.texto-noticia p:last-child {
+    font-size: 1rem;
+}
+
+.equipos {
+    width: 50%;
+}
+
+.equipos p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.equipos img {
+    width: 180px;
+    margin-right: 1.1rem;
+}
+
+.equipo-item {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.equipo-item img {
+    transition: transform 0.3s ease;
+}
+
+.equipo-item:hover img {
+    transform: scale(1.05);
+}
+
+#patrocinadores {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    margin-top: 3rem;
+    padding-top: 2rem;
+}
+
+#patrocinadores > p:first-child {
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.item-patrocinador {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border: 2px solid red;
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.item-patrocinador:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.item-patrocinador img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: white;
+}
+
+.item-patrocinador p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.item-patrocinador p:nth-of-type(1) {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.item-patrocinador p:nth-of-type(2) {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.item-patrocinador p:nth-of-type(3) {
+    color: #555;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 3rem;
+    padding: 2rem 0 0 0;
+}
+
+.footer-contenido {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-columna {
+    width: 50%;
+    padding: 0 1rem;
+}
+
+.footer-columna h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    border-bottom: 2px solid red;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links li a {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    display: block;
+    padding: 0.3rem 0;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.1);
+}
+
+.redes-sociales img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+}
+
+.footer-derechos {
+    background-color: #111;
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.footer-derechos p {
+    font-size: 1rem;
+    color: #aaa;
+    margin: 0;
+}
+
+@keyframes banner {
+    0%, 18% {
+        background-image: url("../img/inicio/banner_principal.png");
+        opacity: 1;
+    }
+
+    19%, 20% {
+        opacity: 0.1;
+    }
+
+    21%, 38% {
+        background-image: url("../img/inicio/banner_secundario.jpg");
+        opacity: 1;
+    }
+
+    39%, 40% {
+        opacity: 0.1;
+    }
+
+    41%, 58% {
+        background-image: url("../img/inicio/banner_tercero.png");
+        opacity: 1;
+    }
+
+    59%, 60% {
+        opacity: 0.1;
+    }
+
+    61%, 78% {
+        background-image: url("../img/inicio/banner_cuarto.jpg");
+        opacity: 1;
+    }
+
+    79%, 80% {
+        opacity: 0.1;
+    }
+
+    81%, 100% {
+        background-image: url("../img/inicio/banner_quinto.jpg");
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li a {
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+
+    header img:first-child,
+    header img:last-child {
+        width: 60px;
+        margin: 0.5rem 0;
+    }
+
+    .inicio_banner {
+        width: 100%;
+        height: auto;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .inicio_banner h1 {
+        font-size: 3rem;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .inicio_banner a {
+        width: 80%;
+        margin: 2rem auto 0 auto;
+        font-size: 1.6rem;
+    }
+
+    #tabular {
+        flex-direction: column;
+    }
+
+    .noticias,
+    .equipos {
+        width: 100%;
+    }
+
+    .contenido-noticia {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .noticias img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .equipos img {
+        width: 140px;
+        margin-bottom: 1rem;
+    }
+
+    #patrocinadores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-patrocinador {
+        width: 90%;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-columna {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+    }
+}
