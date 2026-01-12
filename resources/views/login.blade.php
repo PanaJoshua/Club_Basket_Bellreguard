@@ -17,7 +17,7 @@
             <li><a href="{{ route('inicio') }}">Inicio</a></li>
             <li><a href="{{ route('noticias') }}">Noticias</a></li>
             <li><a href="{{ route('equipos') }}">Equipos</a></li>
-            <li><a href="{{ route('estadisticas') }}">Estadísticas</a></li>
+            <li><a href="{{ route('partidos') }}">Partidos</a></li>
             <li><a href="{{ route('calendario') }}">Calendario</a></li>
             <li><a href="{{ route('tienda') }}">Tienda</a></li>
         </ul>
@@ -27,11 +27,10 @@
 
 <main class="acceso">
 
-    <section class="acceso_contenedor">
+    <section class="acceso_contenedor acceso_unico">
 
         <section class="login">
             <h1>Iniciar sesión</h1>
-
             <form action="#" method="post" class="form_login">
 
                 <div class="campo">
@@ -49,31 +48,10 @@
                     </label>
                 </div>
 
-                <button type="submit" class="btn_principal">Entrar</button>
+                <a href="{{ route('dashboard') }}" class="btn_principal">Entrar</a>
 
                 <a href="#" class="enlace">¿Olvidaste la contraseña?</a>
-
-            </form>
-        </section>
-
-        <section class="registro">
-            <h1>Crear cuenta</h1>
-
-            <form action="#" method="post" class="form_registro">
-
-                <div class="campo">
-                    <input type="text" name="nombre" placeholder="Nombre completo" required>
-                </div>
-
-                <div class="campo">
-                    <input type="email" name="email" placeholder="Correo electrónico" required>
-                </div>
-
-                <div class="campo">
-                    <input type="password" name="password" placeholder="Contraseña" required>
-                </div>
-
-                <button type="submit" class="btn_principal">Registrarse</button>
+                <a href="{{ route('registro') }}" class="enlace">¿No tienes cuenta? Regístrate</a>
 
             </form>
         </section>
@@ -89,12 +67,13 @@
 
 </main>
 
+
+
 <footer>
     <div class="footer-contenido">
         <div class="footer-columna">
             <h3>CLUB BÁSQUET BELLREGUARD</h3>
             <ul class="footer-links">
-                <li><a href="#">Hazte patrocinador</a></li>
                 <li><a href="#">Contacta con nosotros</a></li>
                 <li><a href="https://basketcv.com/club/basquet-bellreguard">Más información del club</a></li>
             </ul>

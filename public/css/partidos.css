@@ -1,0 +1,307 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background-color: #e0e0e0;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #DC2626;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img:first-child {
+    width: 80px;
+    margin-left: 1rem;
+}
+
+header img:last-child {
+    width: 80px;
+    margin-right: 1rem;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    display: block;
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+header ul li a:hover {
+    color: black;
+    transition: color 0.3s;
+}
+
+/* MAIN */
+main {
+    padding-top: 2rem;
+}
+
+.partidos_introduccion {
+    text-align: center;
+}
+
+.partidos_introduccion h1 {
+    font-size: 3.5rem;
+}
+
+.partidos_introduccion p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+/* FILTROS */
+.partidos_filtros {
+    margin-top: 2rem;
+}
+
+.formulario_partidos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.filtro select {
+    width: 240px;
+    height: 4rem;
+    font-size: 1.4rem;
+    border: none;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.btn-buscar {
+    width: 160px;
+    height: 4rem;
+    background-color: #DC2626;
+    color: white;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.btn-buscar:hover {
+    background-color: darkred;
+}
+
+/* LISTADO */
+.partidos_listado {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.partido_card {
+    background-color: white;
+    border: 1px solid black;
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.partido_card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.partido_fecha {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.partido_equipos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.resultado {
+    font-weight: bold;
+    color: #DC2626;
+}
+
+.resultado.pendiente {
+    color: #999;
+}
+
+.partido_info {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.etiqueta {
+    padding: 0.3rem 0.8rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.etiqueta.local {
+    background-color: #DC2626;
+}
+
+.etiqueta.visitante {
+    background-color: #2563eb;
+}
+
+.btn-detalle {
+    background-color: gray;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.3rem;
+}
+
+.btn-detalle:hover {
+    background-color: #DC2626;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 3rem;
+    padding: 2rem 0 0 0;
+}
+
+.footer-contenido {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-columna {
+    width: 50%;
+    padding: 0 1rem;
+}
+
+.footer-columna h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    border-bottom: 2px solid red;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links li a {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    display: block;
+    padding: 0.3rem 0;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.1);
+}
+
+.redes-sociales img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+}
+
+.footer-derechos {
+    background-color: #111;
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.footer-derechos p {
+    font-size: 1rem;
+    color: #aaa;
+    margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario_partidos {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .filtro select,
+    .btn-buscar {
+        width: 100%;
+    }
+
+    .partido_equipos {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .partido_info {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

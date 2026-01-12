@@ -118,10 +118,65 @@ main {
 .equipo_card:hover {
     transform: translateY(-6px);
     box-shadow: 0 8px 16px rgba(0,0,0,.15);
+    color: #DC2626;
 }
 
 .equipo_imagen {
     background-image: url("../img/equipos/logo_basket.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    height: 32rem;
+}
+
+.equipo_imagen1 {
+    background-image: url("../img/equipos/equipo_basket1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    height: 32rem;
+}
+
+.equipo_imagen2 {
+    background-image: url("../img/equipos/equipo_basket2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    height: 32rem;
+}
+
+.equipo_imagen3 {
+    background-image: url("../img/equipos/equipos_basket3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    height: 32rem;
+}
+
+.equipo_imagen4 {
+    background-image: url("../img/equipos/equipo_basket4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    height: 32rem;
+}
+
+.equipo_imagen5 {
+    background-image: url("../img/equipos/equipo_basket5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    height: 32rem;
+}
+
+.equipo_imagen6 {
+    background-image: url("../img/equipos/equipo_basket6.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -136,6 +191,33 @@ main {
     padding-top: 1rem;
 }
 
+.tag {
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+    width: fit-content;
+}
+
+.tag.infantil {
+    background-color: #22c55e;
+}
+
+.tag.cadete {
+    background-color: #3b82f6;
+}
+
+.tag.junior {
+    background-color: #f59e0b;
+}
+
+.tag.senior {
+    background-color: #DC2626;
+}
+
 .equipo_info h2 {
     font-size: 2rem;
 }
@@ -143,6 +225,12 @@ main {
 .equipo_info p {
     padding-top: 1rem;
     font-size: 1.2rem;
+}
+
+.equipo-datos {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 0.5rem;
 }
 
 .equipo_info a {
@@ -159,6 +247,39 @@ main {
 
 .equipo_info a:hover {
     background-color: #b30000;
+}
+
+.cta-equipos {
+    background-color: #DC2626;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-top: 4rem;
+}
+
+.cta-equipos h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cta-equipos p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.cta-equipos a {
+    display: inline-block;
+    background-color: white;
+    color: #DC2626;
+    padding: 1.2rem 3rem;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.cta-equipos a:hover {
+    transform: scale(1.05);
 }
 
 footer {

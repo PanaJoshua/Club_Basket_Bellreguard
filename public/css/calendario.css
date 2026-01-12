@@ -161,6 +161,10 @@ main {
     border-left: 1px solid #999;
 }
 
+.calendario_grid > .dia:nth-child(7n+1) {
+    border-left: 2px solid #999;
+}
+
 .dia {
     border-right: 1px solid #999;
     border-bottom: 1px solid #999;
@@ -173,11 +177,26 @@ main {
 .dia .numero {
     font-weight: bold;
     display: block;
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
 }
 
 .dia.hoy {
     border: 2px solid #DC2626;
     background-color: #fff;
+    position: relative;
+}
+
+.dia.hoy::after {
+    content: "HOY";
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background-color: #DC2626;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
 }
 
 .dia.partido {
@@ -202,12 +221,16 @@ main {
 
 .dia.evento {
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .dia.evento:hover {
     transform: scale(1.03);
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.dia.evento:hover .texto {
+    font-weight: bold;
 }
 
 footer {

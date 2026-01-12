@@ -17,7 +17,7 @@
             <li><a href="{{ route('inicio') }}">Inicio</a></li>
             <li><a href="{{ route('noticias') }}">Noticias</a></li>
             <li><a href="{{ route('equipos') }}">Equipos</a></li>
-            <li><a href="{{ route('estadisticas') }}">Estadísticas</a></li>
+            <li><a href="{{ route('partidos') }}">Partidos</a></li>
             <li><a href="{{ route('calendario') }}">Calendario</a></li>
             <li><a href="{{ route('tienda') }}">Tienda</a></li>
         </ul>
@@ -45,68 +45,62 @@
 
     <section class="tienda_productos">
 
-        <a href="producto.html" class="producto_link">
-        <article class="producto_card">
+        <a href="{{ route('detalle_producto') }}" class="producto_link">
+        <article class="producto_card destacado">
             <div class="producto_imagen"></div>
             <div class="producto_info">
                 <h2>Camiseta oficial 25/26</h2>
                 <p class="precio">25,00€</p>
-                <button class="btn-comprar">Ver producto</button>
             </div>
         </article>
         </a>
 
-        <a href="producto.html" class="producto_link">
+        <a href="{{ route('detalle_producto') }}" class="producto_link">
         <article class="producto_card">
-            <div class="producto_imagen"></div>
+            <div class="producto_imagen2"></div>
             <div class="producto_info">
                 <h2>Balón de entrenar</h2>
                 <p class="precio">20,00€</p>
-                <button class="btn-comprar">Ver producto</button>
             </div>
         </article>
         </a>
 
-        <a href="producto.html" class="producto_link">
+        <a href="{{ route('detalle_producto') }}" class="producto_link">
         <article class="producto_card">
-            <div class="producto_imagen"></div>
+            <div class="producto_imagen3"></div>
             <div class="producto_info">
                 <h2>Gorra del club firmada</h2>
                 <p class="precio">22,00€</p>
-                <button class="btn-comprar">Ver producto</button>
             </div>
         </article>
         </a>
 
-        <a href="producto.html" class="producto_link">
+        <a href="{{ route('detalle_producto') }}" class="producto_link">
         <article class="producto_card">
-            <div class="producto_imagen"></div>
+            <div class="producto_imagen4"></div>
             <div class="producto_info">
-                <h2>Nombre</h2>
-                <p class="precio">Precio</p>
-                <button class="btn-comprar">Ver producto</button>
+                <h2>Camiseta del club firmada</h2>
+                <p class="precio">15,50€</p>
             </div>
         </article>
         </a>
 
-        <a href="producto.html" class="producto_link">
+        <a href="{{ route('detalle_producto') }}" class="producto_link">
         <article class="producto_card">
-            <div class="producto_imagen"></div>
+            <div class="producto_imagen5"></div>
             <div class="producto_info">
-                <h2>Nombre</h2>
-                <p class="precio">Precio</p>
-                <button class="btn-comprar">Ver producto</button>
+                <h2>Mini canasta oficial del club</h2>
+                <p class="precio">23,00€</p>
             </div>
         </article>
         </a>
 
-        <a href="producto.html" class="producto_link">
+        <a href="{{ route('detalle_producto') }}" class="producto_link">
         <article class="producto_card">
-            <div class="producto_imagen"></div>
+            <div class="producto_imagen6"></div>
             <div class="producto_info">
-                <h2>Nombre</h2>
-                <p class="precio">Precio</p>
-                <button class="btn-comprar">Ver producto</button>
+                <h2>Camiseta oficial del club</h2>
+                <p class="precio">60,00€</p>
             </div>
         </article>
         </a>
@@ -124,7 +118,6 @@
         <div class="footer-columna">
             <h3>CLUB BÁSQUET BELLREGUARD</h3>
             <ul class="footer-links">
-                <li><a href="#">Hazte patrocinador</a></li>
                 <li><a href="#">Contacta con nosotros</a></li>
                 <li><a href="https://basketcv.com/club/basquet-bellreguard">Más información del club</a></li>
             </ul>

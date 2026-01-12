@@ -16,7 +16,7 @@
             <li><a href="{{ route('inicio') }}">Inicio</a></li>
             <li><a href="{{ route('noticias') }}">Noticias</a></li>
             <li><a href="{{ route('equipos') }}">Equipos</a></li>
-            <li><a href="{{ route('estadisticas') }}">Estadísticas</a></li>
+            <li><a href="{{ route('partidos') }}">Partidos</a></li>
             <li><a href="{{ route('calendario') }}">Calendario</a></li>
             <li><a href="{{ route('tienda') }}">Tienda</a></li>
         </ul>
@@ -40,59 +40,77 @@
         <section class="equipos_listado">
 
             <article class="equipo_card">
-                <div class="equipo_imagen"></div>
+                <div class="equipo_imagen1"></div>
                 <div class="equipo_info">
+                    <span class="tag senior">Senior</span>
                     <h2>Senior Masculino</h2>
                     <p><strong>Entrenador:</strong> J. Martínez</p>
-                    <a href="#" class="btn-equipo">Ver plantilla</a>
+                    <p class="equipo-datos">👥 12 jugadores · 🏆 Liga Autonómica</p>
+                    <a href="{{ route('plantilla') }}" class="btn-equipo">Ver plantilla</a>
                 </div>
             </article>
 
             <article class="equipo_card">
-                <div class="equipo_imagen"></div>
+                <div class="equipo_imagen2"></div>
                 <div class="equipo_info">
+                    <span class="tag junior">Junior</span>
                     <h2>Junior Masculino</h2>
                     <p><strong>Entrenador:</strong> J. Martínez</p>
-                    <a href="#" class="btn-equipo">Ver plantilla</a>
+                    <p class="equipo-datos">👥 12 jugadores · 🏆 Liga Autonómica</p>
+                    <a href="{{ route('plantilla') }}" class="btn-equipo">Ver plantilla</a>
                 </div>
             </article>
 
             <article class="equipo_card">
-                <div class="equipo_imagen"></div>
+                <div class="equipo_imagen3"></div>
                 <div class="equipo_info">
+                    <span class="tag cadete">Cadete</span>
                     <h2>Cadete Masculino</h2>
                     <p><strong>Entrenador:</strong> J. Martínez</p>
-                    <a href="#" class="btn-equipo">Ver plantilla</a>
+                    <p class="equipo-datos">👥 12 jugadores · 🏆 Liga Autonómica</p>
+                    <a href="{{ route('plantilla') }}" class="btn-equipo">Ver plantilla</a>
                 </div>
             </article>
 
             <article class="equipo_card">
-                <div class="equipo_imagen"></div>
+                <div class="equipo_imagen4"></div>
                 <div class="equipo_info">
+                    <span class="tag infantil">Infantil</span>
                     <h2>Infantil Masculino</h2>
                     <p><strong>Entrenador:</strong> J. Martínez</p>
-                    <a href="#" class="btn-equipo">Ver plantilla</a>
+                    <p class="equipo-datos">👥 12 jugadores · 🏆 Liga Autonómica</p>
+                    <a href="{{ route('plantilla') }}" class="btn-equipo">Ver plantilla</a>
                 </div>
             </article>
 
             <article class="equipo_card">
-                <div class="equipo_imagen"></div>
+                <div class="equipo_imagen5"></div>
                 <div class="equipo_info">
+                    <span class="tag senior">Senior</span>
                     <h2>Senior Femenino</h2>
                     <p><strong>Entrenador:</strong> J. Martínez</p>
-                    <a href="#" class="btn-equipo">Ver plantilla</a>
+                    <p class="equipo-datos">👥 12 jugadores · 🏆 Liga Autonómica</p>
+                    <a href="{{ route('plantilla') }}" class="btn-equipo">Ver plantilla</a>
                 </div>
             </article>
 
             <article class="equipo_card">
-                <div class="equipo_imagen"></div>
+                <div class="equipo_imagen6"></div>
                 <div class="equipo_info">
+                    <span class="tag junior">Junior</span>
                     <h2>Junior Femenino</h2>
                     <p><strong>Entrenador:</strong> J. Martínez</p>
-                    <a href="#" class="btn-equipo">Ver plantilla</a>
+                    <p class="equipo-datos">👥 12 jugadores · 🏆 Liga Autonómica</p>
+                    <a href="{{ route('plantilla') }}" class="btn-equipo">Ver plantilla</a>
                 </div>
             </article>
 
+        </section>
+
+        <section class="cta-equipos">
+            <h2>¿Quieres formar parte del club?</h2>
+            <p>Inscripciones abiertas para todas las categorías</p>
+            <a href="#">Contactar con el club</a>
         </section>
 
     </main>
@@ -102,7 +120,6 @@
             <div class="footer-columna">
                 <h3>CLUB BÁSQUET BELLREGUARD</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Hazte patrocinador</a></li>
                     <li><a href="#">Contacta con nosotros</a></li>
                     <li><a href="https://basketcv.com/club/basquet-bellreguard">Más información del club</a></li>
                 </ul>

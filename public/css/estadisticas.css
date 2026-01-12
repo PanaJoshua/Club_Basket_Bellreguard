@@ -125,9 +125,12 @@ main {
 .resumen_card {
     background-color: white;
     border: 1px solid black;
-    height: 10rem;
+    height: 11rem;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 2.5rem;
+    display: block;
+    margin-top: 0.5rem;
 }
 
 .resumen_card:hover {
@@ -140,16 +143,52 @@ main {
     font-size: 2rem;
 }
 
-.resumen_card p:nth-child(2) {
-    padding-top: 1rem;
-    font-size: 2.8rem;
+.resumen_card p {
+    padding-top: 0.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #DC2626;
 }
 
-.resumen_card p:nth-child(3) {
-    padding-top: 0.5rem;
-    font-size: 1.5rem;
+.resumen_card small {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.jugador_destacado {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.jugador_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.jugador_card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.jugador_info h3 {
+    font-size: 2rem;
+}
+
+.jugador_info p {
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
 }
 
 .estadisticas_tabla {
@@ -176,6 +215,11 @@ main {
 }
 
 .estadisticas_tabla th {
+    font-weight: bold;
+}
+
+.estadisticas_tabla tr.destacado {
+    background-color: #ffe5e5;
     font-weight: bold;
 }
 
@@ -352,6 +396,15 @@ footer {
 
     .resumen_card p:nth-child(2) {
         font-size: 2.4rem;
+    }
+
+    .resumen_card:hover h2 {
+        color: #DC2626;
+    }
+
+    .jugador_card {
+        flex-direction: column;
+        text-align: center;
     }
 
     .estadisticas_tabla {

@@ -17,7 +17,7 @@
             <li><a href="{{ route('inicio') }}">Inicio</a></li>
             <li><a href="{{ route('noticias') }}">Noticias</a></li>
             <li><a href="{{ route('equipos') }}">Equipos</a></li>
-            <li><a href="{{ route('estadisticas') }}">Estadísticas</a></li>
+            <li><a href="{{ route('partidos') }}">Partidos</a></li>
             <li><a href="{{ route('calendario') }}">Calendario</a></li>
             <li><a href="{{ route('tienda') }}">Tienda</a></li>
         </ul>
@@ -36,36 +36,37 @@
 
     <section class="patrocinadores_principales">
 
-        <h2>Patrocinadores principales</h2>
-
         <div class="patrocinadores_grid">
 
             <a href="#" class="patrocinador_card">
-                <div class="patrocinador_logo"></div>
+                <div class="patrocinador_logo1"></div>
                 <div class="patrocinador_info">
-                    <h3>Deportes Bellreguard</h3>
-                    <p>Tienda oficial del club</p>
+                    <h3>Nike</h3>
+                    <p>Patrocinador oficial</p>
                 </div>
             </a>
 
             <a href="#" class="patrocinador_card">
-                <div class="patrocinador_logo"></div>
+                <div class="patrocinador_logo2"></div>
                 <div class="patrocinador_info">
-                    <h3>Nombre</h3>
+                    <h3>Adidas</h3>
+                    <p>Patrocinador oficial</p>
                 </div>
             </a>
 
             <a href="#" class="patrocinador_card">
-                <div class="patrocinador_logo"></div>
+                <div class="patrocinador_logo3"></div>
                 <div class="patrocinador_info">
-                    <h3>Nombre</h3>
+                    <h3>Puma</h3>
+                    <p>Patrocinador oficial</p>
                 </div>
             </a>
 
             <a href="#" class="patrocinador_card">
-                <div class="patrocinador_logo"></div>
+                <div class="patrocinador_logo4"></div>
                 <div class="patrocinador_info">
-                    <h3>Nombre</h3>
+                    <h3>Caixabank</h3>
+                    <p>Patrocinador oficial</p>
                 </div>
             </a>
 
@@ -79,22 +80,28 @@
         <div class="colaboradores_grid">
 
             <article class="colaborador_card">
-                <div class="colaborador_logo"></div>
+                <div class="colaborador_logo1"></div>
             </article>
 
             <article class="colaborador_card">
-                <div class="colaborador_logo"></div>
+                <div class="colaborador_logo2"></div>
             </article>
 
             <article class="colaborador_card">
-                <div class="colaborador_logo"></div>
+                <div class="colaborador_logo3"></div>
             </article>
 
             <article class="colaborador_card">
-                <div class="colaborador_logo"></div>
+                <div class="colaborador_logo4"></div>
             </article>
 
         </div>
+    </section>
+
+    <section class="hazte_patrocinador">
+        <h2>¿Quieres apoyar al club?</h2>
+        <p>Únete como patrocinador o colaborador y forma parte de nuestra familia.</p>
+        <a href="#" class="btn-patrocinador">Hazte patrocinador</a>
     </section>
 
 </main>
@@ -104,7 +111,6 @@
         <div class="footer-columna">
             <h3>CLUB BÁSQUET BELLREGUARD</h3>
             <ul class="footer-links">
-                <li><a href="#">Hazte patrocinador</a></li>
                 <li><a href="#">Contacta con nosotros</a></li>
                 <li><a href="https://basketcv.com/club/basquet-bellreguard">Más información del club</a></li>
             </ul>

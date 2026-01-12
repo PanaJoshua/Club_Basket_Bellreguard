@@ -16,7 +16,7 @@
         <li><a href="{{ route('inicio') }}">Inicio</a></li>
         <li><a href="{{ route('noticias') }}">Noticias</a></li>
         <li><a href="{{ route('equipos') }}">Equipos</a></li>
-        <li><a href="{{ route('estadisticas') }}">Estadísticas</a></li>
+        <li><a href="{{ route('partidos') }}">Partidos</a></li>
         <li><a href="{{ route('calendario') }}">Calendario</a></li>
         <li><a href="{{ route('tienda') }}">Tienda</a></li>
     </ul>
@@ -25,19 +25,18 @@
 
 <main>
 
+    <!-- INTRO -->
     <section class="estadisticas_introduccion">
         <h1>Estadísticas del Club</h1>
-        <p>
-            Consulta los datos de jugadores, equipos y temporadas del 
-            Club Básquet Bellreguard
-        </p>
+        <p>Estadísticas del equipo Senior · Temporada 2025 / 2026</p>
     </section>
 
+    <!-- FILTROS -->
     <section class="estadisticas_filtros">
         <form class="formulario" action="#" method="get">
 
             <div class="filtro">
-                <select name="equipo" id="equipo">
+                <select name="equipo">
                     <option value="">Seleccionar equipo</option>
                     <option value="senior">Senior</option>
                     <option value="junior">Junior</option>
@@ -47,7 +46,7 @@
             </div>
 
             <div class="filtro">
-                <select name="temporada" id="temporada">
+                <select name="temporada">
                     <option value="">Seleccionar temporada</option>
                     <option value="25-26">2025 / 2026</option>
                     <option value="24-25">2024 / 2025</option>
@@ -59,48 +58,67 @@
         </form>
     </section>
 
+    <!-- RESUMEN -->
     <section class="estadisticas_resumen">
+
         <article class="resumen_card">
+            <span class="icono">🏀</span>
             <h2>Partidos jugados</h2>
             <p>24</p>
-            <p>Temporada 25/26</p>
+            <small>Temporada 25/26</small>
         </article>
 
         <article class="resumen_card">
-            <h2>Puntos totales</h2>
+            <span class="icono">🔥</span>
+            <h2>Puntos</h2>
             <p>845</p>
         </article>
 
         <article class="resumen_card">
+            <span class="icono">🧱</span>
             <h2>Rebotes</h2>
             <p>210</p>
         </article>
 
         <article class="resumen_card">
+            <span class="icono">🎯</span>
             <h2>Asistencias</h2>
             <p>176</p>
         </article>
 
     </section>
 
-    <section class="estadisticas_tabla">
+    <!-- JUGADOR DESTACADO -->
+    <section class="jugador_destacado">
+        <h2>⭐ Jugador destacado</h2>
 
+        <div class="jugador_card">
+            <img src="{{ asset('img/estadisticas/lebron.jpg') }}" alt="Jugador destacado">
+            <div class="jugador_info">
+                <h3>A. Torres</h3>
+                <p>Posición: Escolta</p>
+                <p><strong>Media:</strong> 18.4 puntos por partido</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABLA -->
+    <section class="estadisticas_tabla">
         <table>
             <thead>
                 <tr>
                     <th>Jugador</th>
                     <th>Puntos</th>
-                    <th>Tiros 2P</th>
-                    <th>Tiros 3P</th>
+                    <th>2P</th>
+                    <th>3P</th>
                     <th>Rebotes</th>
                     <th>Asistencias</th>
                     <th>Robos</th>
                 </tr>
             </thead>
-
             <tbody>
-                <tr>
-                    <td>A. Torres</td>
+                <tr class="destacado">
+                    <td>A. Torres ⭐</td>
                     <td>24</td>
                     <td>25</td>
                     <td>16</td>
@@ -108,7 +126,6 @@
                     <td>23</td>
                     <td>13</td>
                 </tr>
-
                 <tr>
                     <td>M. López</td>
                     <td>16</td>
@@ -118,7 +135,6 @@
                     <td>19</td>
                     <td>22</td>
                 </tr>
-
                 <tr>
                     <td>J. Carreño</td>
                     <td>11</td>
@@ -128,9 +144,26 @@
                     <td>11</td>
                     <td>12</td>
                 </tr>
-
                 <tr>
-                    <td>T. García</td>
+                    <td>J. Fernandez</td>
+                    <td>11</td>
+                    <td>33</td>
+                    <td>18</td>
+                    <td>23</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>L. Dias</td>
+                    <td>11</td>
+                    <td>33</td>
+                    <td>18</td>
+                    <td>23</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>A. Morata</td>
                     <td>11</td>
                     <td>33</td>
                     <td>18</td>
@@ -140,7 +173,6 @@
                 </tr>
             </tbody>
         </table>
-
     </section>
 
 </main>
@@ -150,23 +182,22 @@
         <div class="footer-columna">
             <h3>CLUB BÁSQUET BELLREGUARD</h3>
             <ul class="footer-links">
-                <li><a href="#">Hazte patrocinador</a></li>
                 <li><a href="#">Contacta con nosotros</a></li>
-                <li><a href="https://basketcv.com/club/basquet-bellreguard">Más información del club</a></li>
+                <li><a href="https://basketcv.com/club/basquet-bellreguard">Más información</a></li>
             </ul>
         </div>
 
         <div class="footer-columna">
             <h3>REDES SOCIALES</h3>
             <div class="redes-sociales">
-                <a href="#"><img src="{{ asset('img/estadisticas/facebook.png') }}" alt="Facebook"></a>
-                <a href="https://www.instagram.com/basquetbellreguard/"><img src="{{ asset('img/estadisticas/instagram.png') }}" alt="Instagram"></a>
+                <a href="#"><img src="{{ asset('img/estadisticas/facebook.png') }}"></a>
+                <a href="https://www.instagram.com/basquetbellreguard/"><img src="{{ asset('img/estadisticas/instagram.png') }}"></a>
             </div>
         </div>
     </div>
 
     <div class="footer-derechos">
-        <p>© 2025 Club Básquet Bellreguard - Todos los derechos reservados</p>
+        <p>© 2025 Club Básquet Bellreguard</p>
     </div>
 </footer>
 

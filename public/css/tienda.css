@@ -122,19 +122,85 @@ main {
     text-decoration: none;
 }
 
+.producto_card {
+    background-color: white;
+    border: 1px solid black;
+    position: relative;
+}
+
 .producto_card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     transition: all 0.3s ease;
 }
 
-.producto_card {
-    background-color: white;
-    border: 1px solid black;
+.producto_card:hover .btn-comprar {
+    background-color: black;
+}
+
+.producto_card.destacado {
+    border: 2px solid #DC2626;
+}
+
+.producto_card.destacado::before {
+    content: "DESTACADO";
+    position: absolute;
+    background-color: #DC2626;
+    color: white;
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+    top: 10px;
+    left: 10px;
+    border-radius: 4px;
 }
 
 .producto_imagen {
     background-image: url("../img/tienda/Merchandising.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    height: 22rem;
+}
+
+.producto_imagen2 {
+    background-image: url("../img/tienda/balon_de_basket.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    height: 22rem;
+}
+
+.producto_imagen3 {
+    background-image: url("../img/tienda/gorra_firmada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    height: 22rem;
+}
+
+.producto_imagen4 {
+    background-image: url("../img/tienda/camiseta_firmada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    height: 22rem;
+}
+
+.producto_imagen5 {
+    background-image: url("../img/tienda/canasta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    height: 22rem;
+}
+
+.producto_imagen6 {
+    background-image: url("../img/tienda/camiseta_oficial.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -157,6 +223,12 @@ main {
 .producto_info p {
     padding-top: 1rem;
     font-size: 1.2rem;
+    font-weight: bold;
+    color: #DC2626;
+}
+
+.producto_info .precio {
+    font-size: 1.8rem;
     font-weight: bold;
     color: #DC2626;
 }
