@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+@import "./admin/dashboard.css";
+@import "./admin/equipos.css";
+@import "./admin/estadisticas.css";
+@import "./admin/partidos.css";
+@import "./admin/perfil_usuario.css";
+
 * {
     padding: 0;
     margin: 0;

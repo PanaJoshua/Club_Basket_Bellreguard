@@ -1,9 +1,6 @@
 @extends('plantilla_admin')
 
 @section('titulo', 'Perfil de usuario')
-@push('styles')
-    @vite('resources/css/admin/perfil_usuario.css')
-@endpush
 @section('contenido')
 
 <main>

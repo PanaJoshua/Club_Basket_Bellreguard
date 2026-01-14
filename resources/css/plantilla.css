@@ -1,5 +1,20 @@
 @charset "utf-8";
 
+@import "./inicio.css";
+@import "./noticias.css";
+@import "./detalles_noticia.css";
+@import "./equipos.css";
+@import "./plantilla_jugadores.css";
+@import "./estadisticas.css";
+@import "./partidos.css";
+@import "./detalle_partido.css";
+@import "./calendario.css";
+@import "./tienda.css";
+@import "./detalles_producto.css";
+@import "./patrocinadores.css";
+@import "./login.css";
+@import "./registro.css";
+
 * {
     margin: 0;
     padding: 0;

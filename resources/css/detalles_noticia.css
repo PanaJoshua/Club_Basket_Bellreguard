@@ -10,7 +10,7 @@ main {
     width: 80%;
     height: 45rem;
     margin: 0 auto;
-    background-image: url('../../public/img/detalles_noticia/equipo_celebrando.jpg');
+    background-image: url('/public/img/detalles_noticia/equipo_celebrando.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -102,7 +102,7 @@ main {
 }
 
 .noticia_imagen1 {
-    background-image: url("../../public/img/detalles_noticia/equipo_celebrando2.jpg");
+    background-image: url("/public/img/detalles_noticia/equipo_celebrando2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -111,7 +111,7 @@ main {
 }
 
 .noticia_imagen2 {
-    background-image: url("../../public/img/detalles_noticia/nueva_incorporacion.jpg");
+    background-image: url("/public/img/detalles_noticia/nueva_incorporacion.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -120,7 +120,7 @@ main {
 }
 
 .noticia_imagen3 {
-    background-image: url("../../public/img/detalles_noticia/proximo_partido.jpg");
+    background-image: url("/public/img/detalles_noticia/proximo_partido.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;

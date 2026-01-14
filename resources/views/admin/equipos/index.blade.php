@@ -1,9 +1,6 @@
 @extends('plantilla_admin')
 
 @section('titulo', 'Equipos del club')
-@push('styles')
-    @vite('resources/css/admin/equipos.css')
-@endpush
 @section('contenido')
 
 <main class="admin_equipos">

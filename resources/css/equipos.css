@@ -63,7 +63,7 @@ main {
 }
 
 .equipo_imagen {
-    background-image: url("../../public/img/equipos/logo_basket.png");
+    background-image: url("/public/img/equipos/logo_basket.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -72,7 +72,7 @@ main {
 }
 
 .equipo_imagen1 {
-    background-image: url("../../public/img/equipos/equipo_basket1.jpg");
+    background-image: url("/public/img/equipos/equipo_basket1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -81,7 +81,7 @@ main {
 }
 
 .equipo_imagen2 {
-    background-image: url("../../public/img/equipos/equipo_basket2.jpg");
+    background-image: url("/public/img/equipos/equipo_basket2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -90,7 +90,7 @@ main {
 }
 
 .equipo_imagen3 {
-    background-image: url("../../public/img/equipos/equipos_basket3.jpg");
+    background-image: url("/public/img/equipos/equipos_basket3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -99,7 +99,7 @@ main {
 }
 
 .equipo_imagen4 {
-    background-image: url("../../public/img/equipos/equipo_basket4.jpg");
+    background-image: url("/public/img/equipos/equipo_basket4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -108,7 +108,7 @@ main {
 }
 
 .equipo_imagen5 {
-    background-image: url("../../public/img/equipos/equipo_basket5.jpg");
+    background-image: url("/public/img/equipos/equipo_basket5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -117,7 +117,7 @@ main {
 }
 
 .equipo_imagen6 {
-    background-image: url("../../public/img/equipos/equipo_basket6.jpg");
+    background-image: url("/public/img/equipos/equipo_basket6.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;

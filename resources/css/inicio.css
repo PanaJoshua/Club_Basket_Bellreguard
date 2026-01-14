@@ -10,7 +10,7 @@ main {
     width: 80%;
     height: 40rem;
     margin: 0 auto;
-    background-image: url('../img/inicio/banner_principal.png');
+    background-image: url('/public/img/inicio/banner_principal.png');
     background-size: cover;
     background-repeat: no-repeat;
     animation: banner 10s infinite;
@@ -337,7 +337,7 @@ main {
 
 @keyframes banner {
     0%, 18% {
-        background-image: url("../../public/img/inicio/banner_principal.png");
+        background-image: url("/public/img/inicio/banner_principal.png");
         opacity: 1;
     }
 
@@ -346,7 +346,7 @@ main {
     }
 
     21%, 38% {
-        background-image: url("../../public/img/inicio/banner_secundario.jpg");
+        background-image: url("/public/img/inicio/banner_secundario.jpg");
         opacity: 1;
     }
 
@@ -355,7 +355,7 @@ main {
     }
 
     41%, 58% {
-        background-image: url("../../public/img/inicio/banner_tercero.png");
+        background-image: url("/public/img/inicio/banner_tercero.png");
         opacity: 1;
     }
 
@@ -364,7 +364,7 @@ main {
     }
 
     61%, 78% {
-        background-image: url("../../public/img/inicio/banner_cuarto.jpg");
+        background-image: url("/public/img/inicio/banner_cuarto.jpg");
         opacity: 1;
     }
 
@@ -373,7 +373,7 @@ main {
     }
 
     81%, 100% {
-        background-image: url("../../public/img/inicio/banner_quinto.jpg");
+        background-image: url("/public/img/inicio/banner_quinto.jpg");
         opacity: 1;
     }
 }

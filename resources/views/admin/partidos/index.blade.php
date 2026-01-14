@@ -1,9 +1,6 @@
 @extends('plantilla_admin')
 
 @section('titulo', 'Partidos')
-@push('styles')
-    @vite('resources/css/admin/partidos.css')
-@endpush
 @section('contenido')
 
 <main class="admin_partidos">

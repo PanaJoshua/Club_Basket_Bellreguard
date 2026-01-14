@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>@yield('titulo')</title>
-    @vite('resources/css/plantilla.css')
-    @stack('styles')
+    @vite(['resources/css/plantilla.css', 'resources/js/app.js'])
 </head>
 <body>
 @include('partials.nav')

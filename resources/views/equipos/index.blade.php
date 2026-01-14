@@ -1,9 +1,6 @@
 @extends('plantilla')
 
 @section('titulo', 'Equipos')
-@push('styles')
-    @vite('resources/css/equipos.css')
-@endpush
 @section('contenido')
 
     <main>

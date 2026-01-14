@@ -103,7 +103,7 @@ main {
 }
 
 .noticia_imagen1 {
-    background-image: url("../../public/img/noticias/brazo_roto.jpg");
+    background-image: url("/public/img/noticias/brazo_roto.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -112,7 +112,7 @@ main {
 }
 
 .noticia_imagen2 {
-    background-image: url("../../public/img/noticias/equipo_celebrando.jpg");
+    background-image: url("/public/img/noticias/equipo_celebrando.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -121,7 +121,7 @@ main {
 }
 
 .noticia_imagen3 {
-    background-image: url("../../public/img/noticias/proximo_partido.jpg");
+    background-image: url("/public/img/noticias/proximo_partido.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -130,7 +130,7 @@ main {
 }
 
 .noticia_imagen4 {
-    background-image: url("../../public/img/noticias/cambios_clubes.jpg");
+    background-image: url("/public/img/noticias/cambios_clubes.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -139,7 +139,7 @@ main {
 }
 
 .noticia_imagen5 {
-    background-image: url("../../public/img/noticias/pierna_rota2.jpg");
+    background-image: url("/public/img/noticias/pierna_rota2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -148,7 +148,7 @@ main {
 }
 
 .noticia_imagen6 {
-    background-image: url("../../public/img/noticias/basket_evento.jpg");
+    background-image: url("/public/img/noticias/basket_evento.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;

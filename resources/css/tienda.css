@@ -96,7 +96,7 @@ main {
 }
 
 .producto_imagen {
-    background-image: url("../../public/img/tienda/Merchandising.png");
+    background-image: url("/public/img/tienda/Merchandising.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -105,7 +105,7 @@ main {
 }
 
 .producto_imagen2 {
-    background-image: url("../../public/img/tienda/balon_de_basket.jpg");
+    background-image: url("/public/img/tienda/balon_de_basket.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -114,7 +114,7 @@ main {
 }
 
 .producto_imagen3 {
-    background-image: url("../../public/img/tienda/gorra_firmada.jpg");
+    background-image: url("/public/img/tienda/gorra_firmada.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -123,7 +123,7 @@ main {
 }
 
 .producto_imagen4 {
-    background-image: url("../../public/img/tienda/camiseta_firmada.jpg");
+    background-image: url("/public/img/tienda/camiseta_firmada.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -132,7 +132,7 @@ main {
 }
 
 .producto_imagen5 {
-    background-image: url("../../public/img/tienda/canasta.jpg");
+    background-image: url("/public/img/tienda/canasta.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -141,7 +141,7 @@ main {
 }
 
 .producto_imagen6 {
-    background-image: url("../../public/img/tienda/camiseta_oficial.jpg");
+    background-image: url("/public/img/tienda/camiseta_oficial.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;

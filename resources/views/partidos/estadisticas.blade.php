@@ -1,9 +1,6 @@
 @extends('plantilla')
 
 @section('titulo', 'Estadisticas del partido')
-@push('styles')
-    @vite('resources/css/estadisticas.css')
-@endpush
 @section('contenido')
 
 <main>

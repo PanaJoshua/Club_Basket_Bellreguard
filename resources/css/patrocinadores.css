@@ -57,7 +57,7 @@ main {
 }
 
 .patrocinador_logo1 {
-    background-image: url("../../public/img/patrocinadores/nike.jpg");
+    background-image: url("/public/img/patrocinadores/nike.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -66,7 +66,7 @@ main {
 }
 
 .patrocinador_logo2 {
-    background-image: url("../../public/img/patrocinadores/adidas.png");
+    background-image: url("/public/img/patrocinadores/adidas.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -75,7 +75,7 @@ main {
 }
 
 .patrocinador_logo3 {
-    background-image: url("../../public/img/patrocinadores/puma.png");
+    background-image: url("/public/img/patrocinadores/puma.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -84,7 +84,7 @@ main {
 }
 
 .patrocinador_logo4 {
-    background-image: url("../../public/img/patrocinadores/caixa_bank.png");
+    background-image: url("/public/img/patrocinadores/caixa_bank.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -148,7 +148,7 @@ main {
 }
 
 .colaborador_logo1 {
-    background-image: url("../../public/img/patrocinadores/ayuntamiento_madrid.png");
+    background-image: url("/public/img/patrocinadores/ayuntamiento_madrid.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -157,7 +157,7 @@ main {
 }
 
 .colaborador_logo2 {
-    background-image: url("../../public/img/patrocinadores/universidad.jpg");
+    background-image: url("/public/img/patrocinadores/universidad.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -166,7 +166,7 @@ main {
 }
 
 .colaborador_logo3 {
-    background-image: url("../../public/img/patrocinadores/hospital.jpg");
+    background-image: url("/public/img/patrocinadores/hospital.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -175,7 +175,7 @@ main {
 }
 
 .colaborador_logo4 {
-    background-image: url("../../public/img/patrocinadores/restaurante.png");
+    background-image: url("/public/img/patrocinadores/restaurante.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;

@@ -1,9 +1,6 @@
 @extends('plantilla')
 
 @section('titulo', 'Partidos')
-@push('styles')
-    @vite('resources/css/detalle_partido.css')
-@endpush
 @section('contenido')
 
 <main>

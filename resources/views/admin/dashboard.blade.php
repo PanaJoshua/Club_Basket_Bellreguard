@@ -1,9 +1,6 @@
 @extends('plantilla_admin')
 
 @section('titulo', 'Dashboard')
-@push('styles')
-    @vite('resources/css/admin/dashboard.css')
-@endpush
 @section('contenido')
 
 <main class="admin_dashboard">

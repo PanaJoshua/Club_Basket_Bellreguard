@@ -1,9 +1,6 @@
 @extends('plantilla')
 
 @section('titulo', 'Noticias')
-@push('styles')
-    @vite('resources/css/noticias.css')
-@endpush
 @section('contenido')
 
 <main>

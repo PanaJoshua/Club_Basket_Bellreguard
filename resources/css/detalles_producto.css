@@ -6,7 +6,7 @@
 }
 
 .producto_imagen_grande {
-    background-image: url("../../public/img/detalles_producto/Merchandising.png");
+    background-image: url("/public/img/detalles_producto/Merchandising.png");
     background-size: cover;
     background-position: center;
     height: 40rem;

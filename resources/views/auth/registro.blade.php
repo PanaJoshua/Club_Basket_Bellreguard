@@ -1,9 +1,6 @@
 @extends('plantilla')
 
 @section('titulo', 'Login')
-@push('styles')
-    @vite('resources/css/registro.css')
-@endpush
 @section('contenido')
 
 <main class="acceso">
