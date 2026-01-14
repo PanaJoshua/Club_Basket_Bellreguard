@@ -1,0 +1,271 @@
+main {
+    padding-top: 2rem;
+}
+
+.patrocinadores_introduccion {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.patrocinadores_introduccion h1 {
+    font-size: 3.5rem;
+}
+
+.patrocinadores_introduccion p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.patrocinadores_principales {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 3rem;
+}
+
+.patrocinadores_grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.patrocinador_card {
+    background-color: white;
+    border: 1px solid black;
+    display: block;
+    color: inherit;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.patrocinador_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.patrocinador_card::before {
+    content: "PATROCINADOR";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #DC2626;
+    color: white;
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+}
+
+.patrocinador_logo1 {
+    background-image: url("../../public/img/patrocinadores/nike.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    padding: 1rem;
+    height: 22rem;
+}
+
+.patrocinador_logo2 {
+    background-image: url("../../public/img/patrocinadores/adidas.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    padding: 1rem;
+    height: 22rem;
+}
+
+.patrocinador_logo3 {
+    background-image: url("../../public/img/patrocinadores/puma.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    padding: 1rem;
+    height: 22rem;
+}
+
+.patrocinador_logo4 {
+    background-image: url("../../public/img/patrocinadores/caixa_bank.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    height: 22rem;
+}
+
+.patrocinador_info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.patrocinador_info h3 {
+    font-size: 1.5rem;
+}
+
+.patrocinador_info p {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.patrocinador_info a {
+    padding-top: 1rem;
+    background-color: #DC2626;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    height: 3rem;
+    width: 30%;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.patrocinador_info a:hover {
+    background-color: #b30000;
+}
+
+.colaboradores {
+    padding-top: 2rem;
+}
+
+.colaboradores_grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.colaborador_card {
+    background-color: white;
+    border: 1px solid black;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.colaborador_card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.colaborador_logo1 {
+    background-image: url("../../public/img/patrocinadores/ayuntamiento_madrid.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    height: 20rem;
+}
+
+.colaborador_logo2 {
+    background-image: url("../../public/img/patrocinadores/universidad.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    height: 20rem;
+}
+
+.colaborador_logo3 {
+    background-image: url("../../public/img/patrocinadores/hospital.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    height: 20rem;
+}
+
+.colaborador_logo4 {
+    background-image: url("../../public/img/patrocinadores/restaurante.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 1rem;
+    height: 20rem;
+}
+
+.hazte_patrocinador {
+    margin-top: 4rem;
+    padding: 3rem;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.hazte_patrocinador h2 {
+    font-size: 2.5rem;
+}
+
+.hazte_patrocinador p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.btn-patrocinador {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: #DC2626;
+    color: white;
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-patrocinador:hover {
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+
+    .patrocinadores_introduccion h1 {
+        font-size: 2.4rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .patrocinadores_introduccion p {
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .patrocinadores_grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        gap: 20px;
+    }
+
+    .patrocinador_logo {
+        height: 18rem;
+    }
+
+    .patrocinador_info h3 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .patrocinador_info p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .patrocinador_info a {
+        width: 90%;
+        font-size: 1.4rem;
+        height: 4rem;
+    }
+
+    .colaboradores_grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1rem;
+        gap: 20px;
+    }
+
+    .colaborador_logo {
+        height: 14rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .colaboradores_grid {
+        grid-template-columns: 1fr;
+    }
+}

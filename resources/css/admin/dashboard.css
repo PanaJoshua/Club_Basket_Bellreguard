@@ -1,0 +1,95 @@
+.admin_dashboard {
+    padding: 2rem 0;
+}
+
+.dashboard_intro {
+    text-align: center;
+}
+
+.dashboard_intro h1 {
+    font-size: 3.5rem;
+}
+
+.dashboard_intro p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.dashboard_resumen {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.resumen_card {
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    padding: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resumen_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.resumen_card .icono {
+    font-size: 3rem;
+}
+
+.resumen_card h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.resumen_card p {
+    margin-top: 1rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #DC2626;
+}
+
+.dashboard_acciones {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.accion_card {
+    background-color: white;
+    border: 1px solid black;
+    padding: 2rem;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.accion_card:hover {
+    background-color: #DC2626;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.accion_card h3 {
+    font-size: 2rem;
+}
+
+.accion_card p {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+
+    .dashboard_resumen {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .dashboard_acciones {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+}

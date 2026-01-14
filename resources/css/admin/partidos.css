@@ -1,0 +1,130 @@
+.admin_partidos {
+    padding: 2rem 0;
+}
+
+.partidos_intro {
+    text-align: center;
+}
+
+.partidos_intro h1 {
+    font-size: 3.5rem;
+}
+
+.partidos_intro p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.partidos_acciones {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn_principal {
+    background-color: #DC2626;
+    color: white;
+    border: none;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.btn_principal:hover {
+    background-color: #b91c1c;
+}
+
+.partidos_tabla {
+    margin-top: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+thead {
+    background-color: #d9d9d9;
+}
+
+th,
+td {
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+tbody tr:hover {
+    background-color: #eee;
+}
+
+.tipo {
+    font-weight: bold;
+}
+
+.tipo.partido {
+    color: #DC2626;
+}
+
+.tipo.entrenamiento {
+    color: #2563eb;
+}
+
+.acciones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn_editar {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn_eliminar {
+    background-color: #DC2626;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn_editar:hover {
+    background-color: #1d4ed8;
+}
+
+.btn_eliminar:hover {
+    background-color: #b91c1c;
+}
+
+@media (max-width: 768px) {
+
+    .partidos_acciones {
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .partidos_tabla {
+        overflow-x: auto;
+        padding: 0 1rem;
+    }
+
+    table {
+        min-width: 700px;
+    }
+}

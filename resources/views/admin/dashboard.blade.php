@@ -1,31 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Joshua Iván Fernández Chávez">
-    <meta name="description" content="Panel de administración del Club Básquet Bellreguard">
-    <title>Admin | Dashboard</title>
-    <link rel="stylesheet" href="{{ asset('css/admin/dashboard.css') }}">
-</head>
-<body>
+@extends('plantilla_admin')
 
-<header>
-    <a href="{{ route('inicio') }}">
-        <img src="{{ asset('img/admin/dashboard/logotipo.png') }}" alt="Logotipo del club">
-    </a>
-
-    <ul>
-        <li><a href="{{ route('dashboard') }}">Panel de control</a></li>
-        <li><a href="{{ route('admin.equipos') }}">Equipos</a></li>
-        <li><a href="{{ route('admin.partidos') }}">Partidos</a></li>
-        <li><a href="{{ route('admin.estadisticas') }}">Estadísticas</a></li>
-    </ul>
-
-    <a href="{{ route('perfil.usuario') }}">
-        <img src="{{ asset('img/admin/dashboard/icono_de_perfil.png') }}" alt="Icono de perfil">
-    </a>
-</header>
+@section('titulo', 'Dashboard')
+@push('styles')
+    @vite('resources/css/admin/dashboard.css')
+@endpush
+@section('contenido')
 
 <main class="admin_dashboard">
 
@@ -83,11 +62,4 @@
 
 </main>
 
-<footer>
-    <div class="footer-derechos">
-        <p>© 2025 Club Básquet Bellreguard · Panel de administración</p>
-    </div>
-</footer>
-
-</body>
-</html>
+@endsection

@@ -1,0 +1,125 @@
+.admin_equipos {
+    padding: 2rem 0;
+}
+
+.equipos_intro {
+    text-align: center;
+}
+
+.equipos_intro h1 {
+    font-size: 3.5rem;
+}
+
+.equipos_intro p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.equipos_acciones {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn_principal {
+    background-color: #DC2626;
+    color: white;
+    border: none;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn_principal:hover {
+    background-color: #b91c1c;
+}
+
+.equipos_tabla {
+    margin-top: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+thead {
+    background-color: #d9d9d9;
+}
+
+th,
+td {
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+}
+
+td:first-child,
+th:first-child {
+    text-align: left;
+    padding-left: 2rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+tbody tr:hover {
+    background-color: #eee;
+}
+
+.acciones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn_editar {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn_editar:hover {
+    background-color: #1d4ed8;
+}
+
+.btn_eliminar {
+    background-color: #DC2626;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn_eliminar:hover {
+    background-color: #b91c1c;
+}
+
+@media (max-width: 768px) {
+
+    .equipos_acciones {
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .equipos_tabla {
+        overflow-x: auto;
+        padding: 0 1rem;
+    }
+
+    table {
+        min-width: 700px;
+    }
+}

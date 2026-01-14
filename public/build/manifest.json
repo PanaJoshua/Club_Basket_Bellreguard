@@ -1,0 +1,17 @@
+{
+  "resources/css/plantilla.css": {
+    "file": "assets/plantilla-DDNXYaew.css",
+    "src": "resources/css/plantilla.css",
+    "isEntry": true,
+    "name": "plantilla",
+    "names": [
+      "plantilla.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CAiCLEjY.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
