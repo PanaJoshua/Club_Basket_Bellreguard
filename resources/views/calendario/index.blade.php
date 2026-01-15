@@ -1,9 +1,6 @@
 @extends('plantilla')
 
 @section('titulo', 'Inicio')
-@push('styles')
-    @vite('resources/css/calendario.css')
-@endpush
 @section('contenido')
 
 <main>

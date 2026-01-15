@@ -1,9 +1,6 @@
 @extends('plantilla')
 
 @section('titulo', 'Patrocinadores y Colaboradores del club')
-@push('styles')
-    @vite('resources/css/patrocinadores.css')
-@endpush
 @section('contenido')
 
 <main>

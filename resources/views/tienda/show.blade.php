@@ -1,9 +1,6 @@
 @extends('plantilla')
 
 @section('titulo', 'Detalle del producto')
-@push('styles')
-    @vite('resources/css/detalles_producto.css')
-@endpush
 @section('contenido')
 
 <main>

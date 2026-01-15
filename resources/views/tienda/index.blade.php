@@ -1,9 +1,6 @@
 @extends('plantilla')
 
 @section('titulo', 'Tienda oficial del club')
-@push('styles')
-    @vite('resources/css/tienda.css')
-@endpush
 @section('contenido')
 
 <main>
