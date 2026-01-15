@@ -25,7 +25,7 @@
                     </label>
                 </div>
 
-                <a href="{{ route('dashboard') }}" class="btn_principal">Entrar</a>
+                <a href="{{ route('admin.dashboard') }}" class="btn_principal">Entrar</a>
 
                 <a href="#" class="enlace">¿Olvidaste la contraseña?</a>
                 <a href="{{ route('registro') }}" class="enlace">¿No tienes cuenta? Regístrate</a>

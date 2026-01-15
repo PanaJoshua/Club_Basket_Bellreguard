@@ -1,10 +1,10 @@
 <header>
-    <a href="{{ route('dashboard') }}">
+    <a href="{{ route('admin.dashboard') }}">
         <img src="{{ asset('img/plantilla/logotipo.png') }}" alt="Logotipo del club">
     </a>
 
     <ul>
-        <li><a href="{{ route('dashboard') }}">Panel de control</a></li>
+        <li><a href="{{ route('admin.dashboard') }}">Panel de control</a></li>
         <li><a href="{{ route('admin.equipos') }}">Equipos</a></li>
         <li><a href="{{ route('admin.partidos') }}">Partidos</a></li>
         <li><a href="{{ route('admin.estadisticas') }}">Estadísticas</a></li>

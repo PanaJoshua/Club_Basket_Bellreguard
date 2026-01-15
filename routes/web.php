@@ -60,7 +60,7 @@ Route::get('/registro', function () {
 
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
-})->name('dashboard');
+})->name('admin.dashboard');
 
 Route::get('/admin/equipos', function () {
     return view('admin.equipos.index');
